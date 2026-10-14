@@ -1,91 +1,105 @@
-<!DOCTYPE html> <!--importacion de librerias-->
+<!DOCTYPE html>
 <html>
-     <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-      <!--inicio de la hoja de vida-->
-      <title>holja de vida</title>
-     </head>
-      <body>
-        <!--realizamos una ruta alternativa para la foto de rostro de la hoja de vida-->
-        <section>
-         <img src="imagenes/WhatsApp Image 2026-09-27 at 7.50.28 PM.jpeg" alt="Foto tipo carnet para hoja de vida" width="150" height="190">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida</title>
+    <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body>
+    <!-- El main envuelve toda la hoja de vida y la centra -->
+    <main class="cv">
+
+        <!-- Encabezado con la foto y el nombre -->
+        <header class="cv-header">
+            <img class="foto" src="imagenes/WhatsApp Image 2026-09-27 at 7.50.28 PM.jpeg"
+                 alt="Foto tipo carnet para hoja de vida">
+            <div class="info">
+                <h1>Josue Benjamin Solano Silva</h1>
+                <p>Estudiante de Desarrollo de Software</p>
+            </div>
+        </header>
+
+        <!-- Seccion: Sobre mi -->
+        <section class="cv-section">
+            <h2>Sobre mi</h2>
+            <p>Soy una persona amable, tolerante, agradecido y carismatico, enfocado en la busqueda continua de
+                soluciones eficaces y orientada al aprendizaje constante para crecer a nivel profesional.</p>
+            <p>Me destaco por mantener una actitud alegre, perseverante y serena, con alta capacidad de adaptacion
+                para colaborar eficientemente en entornos de trabajo en equipo.</p>
+            <p>En mi tiempo libre disfruto del tejido, el dibujo y la cocina; actividades que me han permitido
+                desarrollar destrezas como la concentracion, la disciplina y una vision analitica orientada a superar
+                mis propias expectativas. Me gratifica salir de mi zona de confort, asumiendo nuevos retos que
+                impulsen mi desarrollo integral dia a dia.</p>
         </section>
-        <!--inicio de la informacion y el contexto de nuestra hoja de vida-->
-        <h1>Sobre mi.</h1>
-        <p>Soy una persona amable, tolerante, agradecido y carismático, enfocado en la búsqueda continua de soluciones eficaces y orientada al aprendizaje constante para crecer a nivel profesional. <br> Me destaco por mantener una actitud alegre, perseverante y serena, con alta capacidad de adaptación para colaborar eficientemente en entornos de trabajo en equipo.
-        <br>
-     En mi tiempo libre disfruto del tejido, el dibujo y la cocina; actividades que me han permitido desarrollar destrezas como la concentración, la disciplina y una visión analítica orientada a superar mis propias expectativas.Me gratifica salir de mi zona de confort, asumiendo nuevos retos que impulsen mi desarrollo integral día a día.</p>
-     <br> <!--salto de linea-->
-     <hr style="color: blue;"><!--este comando es visible para el usuario se ve una linea.
-      Es como un salto de linea pero el comando que lo acompaña "style="color:" con el color
-      de nuestra preferencia es mas estetica-->
 
-      <!--vizualisasion de datos personales-->
-     <section> 
-     <h1>Datos Personales.</h1>
-     <p>Apellidos: Solano Silva</p>
-     <p>Nombres: Josue Benjamin</p>
-     <hr style="color: blue;">
-     <p>Lugar y fecha de nacimoineto:Quito Pichincha Cillogallo,8 de Marzo de 2007</p>
-     <p>Estado civil:Soltero</p>
-     <hr style="color: blue;">
-     <p>Direccion Domiciliar:Islas Malvinas S48f y E5D</p>
-     <p>Sector:Turubamba,Barrio Beaterio</p>
-     <p>Telefono: 0963923010</p>
-     <p>Correo Electronico:<p style="color: cornflowerblue;">tr_josuesolano2007@gmail.com</p></p>
-     <br>
-     <hr style="color: blue;">
-     </section>
+        <!-- Seccion: Datos Personales -->
+        <section class="cv-section">
+            <h2>Datos Personales</h2>
+            <div class="datos-grid">
+                <p><strong>Apellidos:</strong> Solano Silva</p>
+                <p><strong>Nombres:</strong> Josue Benjamin</p>
+                <p><strong>Lugar y fecha de nacimiento:</strong> Quito, Pichincha, Chillogallo, 8 de marzo de 2007</p>
+                <p><strong>Estado civil:</strong> Soltero</p>
+                <p><strong>Direccion:</strong> Islas Malvinas S48f y E5D</p>
+                <p><strong>Sector:</strong> Turubamba, Barrio Beaterio</p>
+                <p><strong>Telefono:</strong> 0963923010</p>
+                <p><strong>Correo:</strong> <span class="correo">tr_josuesolano2007@gmail.com</span></p>
+            </div>
+        </section>
 
-      <!--vizualisasion de estudios realizados-->
-     <section>
-     <h1>Estudios Realizados</h1> 
-     <p>Primaria:</p>
-         <ul><!--comando para agregar del tema el sub tema-->
-            <li>Unudad Educativa Municipal "Bicentenario"</li>
-         </ul>
-     <p>Secundaria:</p>
-         <ul>
-            <li>Unidad Educativa Municipal "Bicentenario"</li>
-         </ul>
-     <p>Titulo:</p>
-         <ul>
-            <li>Bachiller en Ciencias</li>
-         </ul>
-     <p>Educasion Superior</p>
-         <ul>
-            <li>Instituto Superior Tecnologico Quito</li>
-            <li>"cursando"</li>
-         </ul>   
+        <!-- Seccion: Estudios Realizados -->
+        <section class="cv-section">
+            <h2>Estudios Realizados</h2>
+            <p><strong>Primaria:</strong></p>
+            <ul>
+                <li>Unidad Educativa Municipal "Bicentenario"</li>
+            </ul>
+            <p><strong>Secundaria:</strong></p>
+            <ul>
+                <li>Unidad Educativa Municipal "Bicentenario"</li>
+            </ul>
+            <p><strong>Titulo:</strong></p>
+            <ul>
+                <li>Bachiller en Ciencias</li>
+            </ul>
+            <p><strong>Educacion Superior:</strong></p>
+            <ul>
+                <li>Instituto Superior Tecnologico Quito</li>
+                <li>Cursando</li>
+            </ul>
+        </section>
 
-     <br>
-     <hr style="color: blue;">    
+        <!-- Seccion: Cursos Realizados -->
+        <section class="cv-section">
+            <h2>Cursos Realizados</h2>
+            <p><strong>Educacion Superior:</strong></p>
+            <ul>
+                <li>Instituto Superior Ecuatoriano de la Productividad (ITSEP)</li>
+                <li>1 semestre "Desarrollo de Software"</li>
+            </ul>
+        </section>
 
-     <!--vizualisacion de cursos realizados-->
+        <!-- Seccion: Referencias Personales -->
+        <section class="cv-section">
+            <h2>Referencias Personales</h2>
+            <p>Disponibles a solicitud.</p>
+        </section>
 
-     <h1>Cursos Realizados</h1>
-     <hr style="color: blue;">
-     <p>Educasion Superior</p>
-         <ul>
-            <li>Instituto Superior Ecuatoriano de la productividad (ITSEP)</li>
-            <li>1 semestre</li>
-         </ul> 
+        <!-- Seccion: Redes Sociales -->
+        <section class="cv-section">
+            <h2>Redes Sociales</h2>
+            <p>
+                <a class="enlace-red" href="https://www.instagram.com/benja08_03/" target="_blank">
+                    Instagram: @benja08_03
+                </a>
+            </p>
+        </section>
 
+    </main>
+</body>
 
-     <h1>Referencias Personales</h1>
-     <hr style="color: blue;">
-     
-     <!--vizualisacion de una ruta absoluta a redes sociales -->
-
-     <h1>Redes Sociales</h1>
-     <section>
-       <h2> <a href="https://www.instagram.com/benja08_03/" target="_blank">Instagram </a> </h2> <!--combinacion del comando de ruta absoluta
-       con uno de encabezados-->
-        <br>
-     </section>
-
-
-     </section>
-    </body>
 </html>

@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Fondo y tipografia general de la pagina */
+body {
+    margin: 0;
+    padding: 32px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e293b;
+    background: #f1f5f9;
+    line-height: 1.6;
+}
+
+/* Tarjeta blanca que contiene toda la hoja de vida */
+.cv {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, .08);
+    overflow: hidden;
+}
+
+/* Encabezado azul con foto y nombre */
+.cv-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 28px 32px;
+    background: #1d4ed8;
+    color: #ffffff;
+}
+
+/* Foto tipo carnet */
+.foto {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+    flex-shrink: 0;
+}
+
+/* Nombre dentro del encabezado */
+.info h1 {
+    margin: 0 0 6px;
+    font-size: 26px;
+    color: #ffffff;
+}
+
+/* Subtitulo del encabezado */
+.info p {
+    margin: 0;
+    color: #dbeafe;
+}
+
+/* Cada seccion de la hoja de vida */
+.cv-section {
+    padding: 24px 32px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Quita la linea inferior a la ultima seccion */
+.cv-section:last-child {
+    border-bottom: none;
+}
+
+/* Titulos de cada seccion */
+.cv-section h2 {
+    margin: 0 0 14px;
+    font-size: 18px;
+    color: #1d4ed8;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #dbeafe;
+}
+
+/* Parrafos dentro de las secciones */
+.cv-section p {
+    margin: 0 0 8px;
+}
+
+/* Rejilla de dos columnas para los datos personales */
+.datos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 24px;
+}
+
+.datos-grid p {
+    margin: 0;
+}
+
+/* Listas dentro de las secciones */
+.cv-section ul {
+    margin: 0 0 12px;
+    padding-left: 20px;
+}
+
+.cv-section li {
+    margin-bottom: 4px;
+}
+
+/* Resalta el correo electronico */
+.correo {
+    color: #2563eb;
+    font-weight: 700;
+}
+
+/* Enlace de redes sociales con forma de boton */
+.enlace-red {
+    display: inline-block;
+    padding: 8px 14px;
+    color: #ffffff;
+    background: #2563eb;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Cambia el color del boton al pasar el mouse */
+.enlace-red:hover {
+    background: #1d4ed8;
+}
+
+/* Borde visible cuando el enlace recibe foco con teclado */
+.enlace-red:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 3px;
+}
